@@ -8,31 +8,28 @@ void main() {
     int number2 = scanner.nextInt();
 
     int result;
-    switch (operation)
-    {
+    switch (operation) {
         case '+':
-            result=number1+number2;
+            result = number1 + number2;
             System.out.println(result);
             break;
         case '-':
-            result=number1-number2;
+            result = number1 - number2;
             System.out.println(result);
             break;
         case '*':
-            result=number1*number2;
+            result = number1 * number2;
             System.out.println(result);
             break;
         case '/':
-            try{
-                result=number1/number2;
+            try {
+                result = number1 / number2;
                 System.out.println(result);
                 break;
-            }catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Stop. Exeption: " + e);
                 break;
             }
-
-
         default:
             System.out.println("Invalid operation");
     }
