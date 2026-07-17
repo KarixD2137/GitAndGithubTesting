@@ -22,10 +22,17 @@ void main() {
             result=number1*number2;
             System.out.println(result);
             break;
-        case '/': // TODO: Fix dividing by zero
-            result=number1/number2;
-            System.out.println(result);
-            break;
+        case '/':
+            try{
+                result=number1/number2;
+                System.out.println(result);
+                break;
+            }catch (Exception e){
+                System.out.println("Stop. Exeption: " + e);
+                break;
+            }
+
+
         default:
             System.out.println("Invalid operation");
     }
